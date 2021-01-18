@@ -44,3 +44,8 @@ const getMaxWaterContainer = (heights) => {
 
 const result = getMaxWaterContainer([7, 1, 2, 3, 9]);
 console.log(result);
+
+/*
+ * Time Complexity: 0(n^2) as there is two loops
+ * Space Complexity: 0(1) as there is only one variable
+ */
