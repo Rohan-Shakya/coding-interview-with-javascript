@@ -1,4 +1,6 @@
-# Give an array of integers, return the indices of the two numbers that add up to a given target.
+# Two Sum
+
+Give an array of integers, return the indices of the two numbers that add up to a given target.
 
 **_Example 1:_**
 
