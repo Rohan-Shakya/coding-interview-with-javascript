@@ -7,7 +7,7 @@ Note that after backspacing an empty text, the text will continue empty.
 **_Example 1:_**
 
 ```
-Input: S = "ab##", T = "ad#c"
+Input: S = "ab#c", T = "ad#c"
 Output: true
 Explanation: Both S and T become "ac".
 ```
