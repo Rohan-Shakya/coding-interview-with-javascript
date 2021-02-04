@@ -1,6 +1,29 @@
 // LeetCode Problem:
 // https://leetcode.com/problems/reverse-linked-list/
 
+class ListNode {
+  constructor(val, next = null) {
+    this.val = val;
+    this.next = next;
+  }
+}
+// ---- Generate our linked list ----
+const linkedList = [5, 4, 3, 2, 1].reduce(
+  (acc, val) => new ListNode(val, acc),
+  null
+);
+
+// ---- Generate our linked list ----
+
+const printList = (head) => {
+  if (!head) {
+    return;
+  }
+
+  console.log(head.val);
+  printList(head.next);
+};
+
 /**
  * Definition for singly-linked list.
  * function ListNode(val, next) {
@@ -25,8 +48,7 @@ var reverseList = function (head) {
   return prev;
 };
 
-// Input: [1, 2, 3, 4, 5]
-// Output: [5, 4, 3, 2, 1]
+printList(reverseList(linkedList));
 
 /*
     Time Complexity: 0(n)
