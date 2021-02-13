@@ -4,13 +4,13 @@ Implement the class Queue using stacks. The queue methods you need to implement 
 
 ## Methods:
 
-- Enqueue: Append a value to the end of the queue.
+- **Enqueue**: Append a value to the end of the queue.
 
-- Dequeue: Remove and the value at the start of the queue.
+- **Dequeue**: Remove and the value at the start of the queue.
 
-- Peek: Return the value at the start of the queue.
+- **Peek**: Return the value at the start of the queue.
 
-- Empty: Return a boolean value of whether the queue is empty or not.
+- **Empty**: Return a boolean value of whether the queue is empty or not.
 
 ## Q/A
 
