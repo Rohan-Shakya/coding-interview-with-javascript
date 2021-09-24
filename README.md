@@ -1,8 +1,10 @@
-# Coding Interview with Javascript
+# Data Structure and Coding Interview with Javascript
+
+> Data Structure are collections of values, the relationships among them, and the functions or operations that can be applied to the data
 
 It contains few popular questions and answers with their optimal solutions that may ask during the Software Engineering Interview.
 
-## Steps that you have to follow:
+## Steps that you have to follow when solving problems:
 
 Before we begin how to solve the questions, we have follow few steps. They are:
 
