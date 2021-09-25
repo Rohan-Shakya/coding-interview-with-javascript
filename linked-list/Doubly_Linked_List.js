@@ -117,6 +117,57 @@ class DoublyLinkedList {
     return this;
   }
 
+  /*
+    =================== Get Pseudo Code ==================
+    * If the index is less than 0 or greater or equal to the length, return null
+    * If the index is less than or equal to half the length of the list
+      * Loop through the list starting from the head and
+        loop though the middle
+      * Return the node once it is found
+    * If the index is greater than half the length of the list
+      * Loop through the list starting from the tail and loop towards the middle
+      * Return the node once it is found
+  */
+  get(index) {
+    if (index < 0 || index >= this.length) return null;
+    let count, current;
+    if (index <= this.length / 2) {
+      count = 0;
+      current = this.head;
+      while (count !== index) {
+        current = current.next;
+        count++;
+      }
+      return current;
+    } else {
+      count = this.length - 1;
+      current = this.tail;
+      while (count !== index) {
+        current = current.prev;
+        count--;
+      }
+      return current;
+    }
+  }
+
+  /*
+    =================== Set Pseudo Code ==================
+    * Create a variable which is the result of the get method
+      at the index passed to the function
+        * If the get method returns a valid node, set the value of that node to
+          be the value passed to the function
+        * Return true
+    * Otherwise, return false
+  */
+  set(index, val) {
+    let foundNode = this.get(index);
+    if (foundNode !== null) {
+      foundNode.val = val;
+      return true;
+    }
+    return false;
+  }
+
   print() {
     let arr = [];
     let current = this.head;
