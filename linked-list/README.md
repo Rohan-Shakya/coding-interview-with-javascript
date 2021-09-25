@@ -8,6 +8,10 @@ Linked List consist of nodes, and each node has a value and a pointer to another
 
 ![Diagram](https://raw.githubusercontent.com/Rohan-Shakya/coding-interview-with-javascript/main/linked-list/assets/Singly%20Linked%20Li.png)
 
+## Doubly Linked List
+
+![Diagram](https://raw.githubusercontent.com/Rohan-Shakya/coding-interview-with-javascript/main/linked-list/assets/Doubly%20Linked%20Li.png)
+
 ### Properties:
 
 - Do not have indexes!
