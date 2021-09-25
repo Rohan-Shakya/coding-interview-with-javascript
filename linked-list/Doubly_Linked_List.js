@@ -1,3 +1,12 @@
+/*
+  ====================== Doubly Linked List ======================
+  * Doubly Linked List are almost identical to Singly Linked Lists
+    excepts there is an additional pointer to previous nodes
+  * Better than Singly Linked Lists for finding nodes and
+    can be done in half the time!
+  * However, they do take up more memory considering the extra power
+*/
+
 class Node {
   constructor(val) {
     this.val = val;
@@ -168,6 +177,64 @@ class DoublyLinkedList {
     return false;
   }
 
+  /*
+    =================== Insert Pseudo Code ==================
+    * If the index is less than zero or greater than or equal to the length,
+      return false
+    * If the index is 0, unshift
+    * If the index is the same as the length, push
+    * Use the get method to access the index - 1
+    * Set the next and prev properties on the correct nodes to link
+      everything together
+    * Increment the length
+    * Return true
+  */
+
+  insert(index, val) {
+    if (index < 0 || index > this.length) return false;
+    if (index === 0) return !!this.unshift(val);
+    if (index === this.length) return !!this.push(val);
+
+    let newNode = new Node(val);
+    let beforeNode = this.get(index - 1);
+    let afterNode = beforeNode.next;
+
+    (beforeNode.next = newNode), (newNode.prev = beforeNode);
+    (newNode.next = afterNode), (afterNode.prev = newNode);
+    this.length++;
+    return true;
+  }
+
+  /*
+    =================== Remove Pseudo Code ==================
+    * If the index is less than zero or greater than or equal to the length,
+      return undefined
+    * If the index is 0, shift
+    * If the index is the same as the length - 1, pop
+    * Use the get method to retrieve the item to be removed
+    * Update the next and prev properties to remove the found
+      node from the list
+    * Set next and prev to null on the found node
+    * Decrement the length
+    * Return the removed node
+  */
+  remove(index) {
+    if (index < 0 || index >= this.length) return undefined;
+    if (index === 0) return this.shift();
+    if (index === this.length - 1) return this.pop();
+
+    let removedNode = this.get(index);
+    let beforeNode = removedNode.prev;
+    let afterNode = removedNode.next;
+
+    beforeNode.next = afterNode;
+    afterNode.prev = beforeNode;
+    removedNode.next = null;
+    removedNode.prev = null;
+    this.length--;
+    return removedNode;
+  }
+
   print() {
     let arr = [];
     let current = this.head;
@@ -178,3 +245,11 @@ class DoublyLinkedList {
     console.log(arr);
   }
 }
+
+/*
+  ============= Big O of Singly Linked List ======
+  * Insertion ---> O(1)
+  * Removal -----> O(1)
+  * Searching ---> O(N/2) => 0(N)
+  * Access ------> O(N)
+*/
