@@ -107,4 +107,39 @@ class SinglyLinkedList {
     this.length++;
     return this;
   }
+
+  /*
+    =================== Get Pseudo Code ==================
+    * This function should accept an index
+    * If the index is less than zero or greater than or
+      equal to the length of the list, return null
+    * Loop through the list until you reach the index and return
+      the node at the specific index
+  */
+  get(index) {
+    if (index < 0 || index >= this.length) return null;
+    let counter = 0;
+    let current = this.head;
+    while (counter !== index) {
+      current = current.next;
+      counter++;
+    }
+    return current;
+  }
+
+  /*
+    =================== Set Pseudo Code ==================
+    * This function should accept a value and an index
+    * Use your get function to find the specific node
+    * If the node is found, set the value of that node to be the 
+      value passed to the function and return true
+  */
+  set(index, val) {
+    let foundNode = this.get(index);
+    if (foundNode) {
+      foundNode.val = val;
+      return true;
+    }
+    return false;
+  }
 }
