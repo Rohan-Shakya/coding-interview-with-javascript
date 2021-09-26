@@ -247,7 +247,7 @@ class DoublyLinkedList {
 }
 
 /*
-  ============= Big O of Singly Linked List ======
+  ============= Big O of Doubly Linked List ======
   * Insertion ---> O(1)
   * Removal -----> O(1)
   * Searching ---> O(N/2) => 0(N)

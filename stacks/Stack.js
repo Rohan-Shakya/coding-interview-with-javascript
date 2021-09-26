@@ -1,5 +1,5 @@
 /*
-  ====================== Singly Linked List ======================
+  ====================== Stacks ======================
     * Stacks are a LIFO data structure where the last value in is
         always the first one out
     * They are not a built in data structure in Javascript,

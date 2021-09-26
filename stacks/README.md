@@ -1,4 +1,4 @@
-# Stack
+# Stacks
 
 > A LIFO data structure!
 
