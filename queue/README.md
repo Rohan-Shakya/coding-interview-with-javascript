@@ -1,6 +1,9 @@
-# Stack
+# Queues
 
 > A FIFO data structure!
+
+Queues are useful for processing tasks and are foundation for more
+complex data structures.
 
 ## Uses
 
