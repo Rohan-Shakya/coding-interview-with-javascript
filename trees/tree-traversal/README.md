@@ -11,4 +11,10 @@ Tree traversal (also known as tree search and walking the tree) is a form of gra
   - DFS - PostOrder
 
 
-![Diagram](https://raw.githubusercontent.com/Rohan-Shakya/coding-interview-with-javascript/main/trees/assets/bst.png)
+![Diagram](https://raw.githubusercontent.com/Rohan-Shakya/coding-interview-with-javascript/main/trees/tree-traversal/assets/bfs.png)
+
+![Diagram](https://raw.githubusercontent.com/Rohan-Shakya/coding-interview-with-javascript/main/trees/tree-traversal/assets/dfs-inorder.png)
+
+![Diagram](https://raw.githubusercontent.com/Rohan-Shakya/coding-interview-with-javascript/main/trees/tree-traversal/assets/dfs-preorder.png)
+
+![Diagram](https://raw.githubusercontent.com/Rohan-Shakya/coding-interview-with-javascript/main/trees/tree-traversal/assets/dfs-postorder.png)
